@@ -91,7 +91,7 @@ static int start_rekernel_server(void) {
     else {
         char buff[32];
         sprintf(buff, "%d", netlink_unit);
-        rekernel_unit_entry = proc_create(buff, 0644, rekernel_dir, &rekernel_proc_ops);
+        rekernel_unit_entry = proc_create(buff, 0644, rekernel_dir, &rekernel_unit_proc_ops);
         if (!rekernel_unit_entry)
             printk("create rekernel unit failed!\n");
     }
