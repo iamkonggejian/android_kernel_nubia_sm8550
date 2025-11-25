@@ -16,7 +16,7 @@
 #include <linux/rcupdate.h>
 #include <linux/refcount.h>
 #include <linux/workqueue.h>
-/* #include "flask.h" */
+#include "flask.h"
 #include "policycap.h"
 
 #define SECSID_NULL			0x00000000 /* unspecified SID */
